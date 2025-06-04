@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+main {
+    max-width: 600px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+#cafeteria-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+.taplink-btn {
+    padding: 1em;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    background: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.taplink-btn:hover {
+    background: #e65100;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.modal-close {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.modal-actions {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    gap: 1em; /* Añade separación entre los botones */
+}
+.modal-actions button {
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background: #ff9800;
+    color: #fff;
+    transition: background 0.2s;
+}
+.modal-actions button:hover {
+    background: #e65100;
+}
